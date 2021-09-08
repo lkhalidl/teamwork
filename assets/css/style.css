@@ -1,0 +1,122 @@
+/**************************** GOOGLE FONT ***************************/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+
+/******************************* VARIABLES CSS *********************************/
+:root{
+    --header-height: 5rem;
+
+    /********* COLORS **********/
+    /* THE MAIN COLOR*/
+    --hue-color : 279;
+
+    /**** Hexadecimal color ****/
+    --first-color :hsl(var(--hue-color));
+    --first-color-second :hsl(var(--hue-color),70%,40%);
+    --first-color-alt : hsl(var(--hue-color));
+    --first-color-lighter : hsl(var(--hue-color),52%,55%);
+    --text-color : hsl(var(--hue-color),86%,6%);
+    --input-color: hsl(var(--hue-color),70%,96%);
+    --body-color: hsl(var(--hue-color),60%,99%);
+    --container-color: #fff;
+
+    /********** Font ***********/
+    
+    --big-font-size: 3rem;
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.05rem;
+    --normal-font-size:1rem ;
+    --small-font-size: .875rem;
+    --smaller-font-size: .875rem;
+
+     /*========== Font weight ==========*/
+     --font-medium: 500;
+     --font-semi-bold: 600;
+
+    /********* Margin Bottom ************/
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3-2:3.2rem;
+    --mb-3: 3rem;
+    --mb-4: 4rem;
+    --mb-5: 5rem;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+/* Font size for small devices */
+
+
+/*==================== BASE ====================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    background-color: rgb(241, 229, 229);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/***************************REUSABLE CSS CLASSES**********************/
+
+
+
+/*************************** LAYOUT **********************/
+
+/****************** HEADER ******************/
+
+.header{
+    width: 100%;
+    z-index: var(--z-tooltip);
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px -55px 75px 0px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.nav{
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    margin: var(--mb-0-5) 0 0 var(--mb-0-75);
+}
+.nav_logo{
+    margin-left: 5rem;   
+}
+.nav_item{
+    display: inline-block;
+    margin-left: var(--mb-3);
+    font-size: var(--h3-font-size);
+}
+.nav_list{
+    display: inline-block;
+    margin-left: 10.5rem;   
+}
+.nav_btn{
+    margin-left: 5rem;
+    height: 55px;
+    width: 175px;
+    line-height: 55px;
+    border-radius: 30px;
+    background-color: var(--first-color-second);
+}
